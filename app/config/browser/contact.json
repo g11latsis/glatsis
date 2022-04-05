@@ -1,0 +1,90 @@
+{
+    "title": "Μέλη",
+    "count": "select count(*) from contact cont inner join parameter parm1 on cont.degreeId = parm1.id left join company_contact coco on cont.id = coco.contID left join company comp on coco.compID = comp.id",
+    "query": "select cont.id, cont.code, cont.firstname, cont.lastname, parm1.name as degree, comp.title as company, coco.dateRegistered from contact cont inner join parameter parm1 on cont.degreeId = parm1.id left join company_contact coco on cont.id = coco.contID left join company comp on coco.compID = comp.id",
+    "pageSize": 15,
+    "newTitle": "dialog.newContact",
+    "fields": [{
+            "name": "id",
+            "fullname": "cont.id",
+            "caption": "ID",
+            "visible": false,
+            "sortable": false,
+            "width": 50,
+            "align": "left"
+        },
+        {
+            "name": "code",
+            "fullname": "cont.code",
+            "caption": "ΕΑΜΕ",
+            "visible": true,
+            "sortable": true,
+            "width": 60,
+            "align": "left",
+            "filter": {
+                "type": "text"
+            }
+        },
+        {
+            "name": "firstname",
+            "fullname": "cont.firstname",
+            "caption": "Όνομα",
+            "visible": true,
+            "sortable": true,
+            "width": 150,
+            "align": "left",
+            "filter": {
+                "type": "text"
+            }
+        },
+        {
+            "name": "lastname",
+            "fullname": "cont.lastname",
+            "caption": "Επώνυμο",
+            "visible": true,
+            "sortable": true,
+            "width": 150,
+            "align": "left",
+            "filter": {
+                "type": "text"
+            }
+        },
+        {
+            "name": "degree",
+            "fullname": "cont.degreeId",
+            "caption": "Ιδιότητα",
+            "visible": true,
+            "sortable": true,
+            "width": 170,
+            "align": "left",
+            "filter": {
+                "type": "parameter",
+                "definition": "cont_degree"
+            }
+        },
+        {
+            "name": "company",
+            "fullname": "comp.title",
+            "caption": "Πόλη",
+            "visible": true,
+            "sortable": true,
+            "width": 100,
+            "align": "left",
+            "filter": {
+                "type": "lookup",
+                "definition": "company"
+            }
+        },
+        {
+            "name": "dateRegistered",
+            "fullname": "coco.dateRegistered",
+            "caption": "Ημ/νία Εγγραφής",
+            "visible": true,
+            "sortable": true,
+            "width": 130,
+            "align": "left",
+            "datatype": "datetime",
+            "format": "d/m/Y"
+        }
+    ]
+}

@@ -1,0 +1,127 @@
+{
+    "title": "Υπηρεσίες",
+    "count": "select count(*) from service",
+    "query": "select * from service",
+    "pageSize": 15,
+    "newTitle": "dialog.newService",
+    "fields": [{
+            "name": "id",
+            "fullname": "id",
+            "caption": "ID",
+            "visible": false,
+            "sortable": false,
+            "width": 20,
+            "align": "left"
+        },
+        {
+            "name": "code",
+            "fullname": "code",
+            "caption": "AA",
+            "visible": true,
+            "sortable": true,
+            "width": 80,
+            "align": "left",
+            "filter": {
+                "type": "text"
+            }
+        },
+
+        {
+            "name": "type",
+            "fullname": "type",
+            "caption": "Τύπος",
+            "visible": true,
+            "sortable": true,
+            "width": 120,
+            "align": "left",
+            "filter": {
+                "type": "text"
+            }
+        },
+        {
+            "name": "title",
+            "fullname": "title",
+            "caption": "Τίτλος",
+            "visible": true,
+            "sortable": true,
+            "width": 120,
+            "align": "left",
+            "filter": {
+                "type": "text"
+            }
+        },
+        {
+            "name": "description",
+            "fullname": "description",
+            "caption": "Περιγραφή",
+            "visible": true,
+            "sortable": true,
+            "width": 120,
+            "align": "left",
+            "filter": {
+                "type": "text"
+            }
+        },
+        {
+            "name": "place",
+            "fullname": "place",
+            "caption": "Περιοχή",
+            "visible": true,
+            "sortable": true,
+            "width": 120,
+            "align": "left",
+            "filter": {
+                "type": "text"
+            }
+        },
+        {
+            "name": "dateStarted",
+            "fullname": "dateStarted",
+            "caption": "Ημερομηνία έναρξης",
+            "visible": true,
+            "sortable": true,
+            "width": 150,
+            "align": "left",
+            "filter": {
+                "type": "date"
+            }
+        },
+        {
+            "name": "dateCompleted",
+            "fullname": "dateCompleted",
+            "caption": "Ημερομηνία λήξης",
+            "visible": true,
+            "sortable": true,
+            "width": 140,
+            "align": "left",
+            "filter": {
+                "type": "date"
+            }
+        },
+        {
+            "name": "totalHours",
+            "fullname": "totalHours",
+            "caption": "Σύνολο ωρών",
+            "visible": true,
+            "sortable": true,
+            "width": 120,
+            "align": "left",
+            "filter": {
+                "type": "number"
+            }
+        },
+        {
+            "name": "contacts",
+            "fullname": "contacts",
+            "caption": "Μέλη",
+            "visible": true,
+            "sortable": true,
+            "width": 120,
+            "align": "left",
+            "filter": {
+                "type": "text"
+            }
+        }
+
+    ]
+}

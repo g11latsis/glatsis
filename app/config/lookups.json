@@ -1,0 +1,5 @@
+{
+	"company": {
+		"query": "select id, title as value from company where active = 1"
+	}
+}

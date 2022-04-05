@@ -1,0 +1,51 @@
+{
+	"title": "Οργανισμοί",
+	"count": "select count(*) from company",
+	"query": "select * from company",
+	"pageSize": 15,
+	"newTitle": "dialog.newCompany",
+	"fields": [{
+			"name": "id",
+			"fullname": "id",
+			"caption": "ID",
+			"visible": false,
+			"sortable": false,
+			"width": 20,
+			"align": "left"
+		},
+		{
+			"name": "code",
+			"fullname": "code",
+			"caption": "Κωδικός",
+			"visible": true,
+			"sortable": true,
+			"width": 80,
+			"align": "left",
+			"filter": {
+				"type": "text"
+			}
+		},
+		{
+			"name": "title",
+			"fullname": "title",
+			"caption": "Όνομα",
+			"visible": true,
+			"sortable": true,
+			"width": 150,
+			"align": "left",
+			"filter": {
+				"type": "text"
+			}
+		},
+		{
+			"name": "active",
+			"fullname": "active",
+			"caption": "Ενεργό",
+			"visible": true,
+			"sortable": true,
+			"width": 150,
+			"align": "center",
+			"datatype": "boolean"
+		}
+	]
+}

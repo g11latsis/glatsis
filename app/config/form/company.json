@@ -1,0 +1,49 @@
+{
+	"tabs": [{
+		"id": "baseinfo", 
+		"caption": "label.baseinfo",
+		"fields": [{
+			"name": "id",
+			"visible": false,
+			"control": "hidden",
+			"mandatory": false,
+			"unique": true,
+			"type": "int",
+			"colindex": 1
+		},{
+			"name": "code",
+			"caption": "label.code",
+			"visible": true,
+			"control": "textbox",
+			"mandatory": true,
+			"unique": true,
+			"type": "string",
+			"minlen": 0,
+			"maxlen": 0,
+			"colindex": 1
+		},{
+			"name": "title",
+			"caption": "label.title",
+			"visible": true,
+			"control": "textbox",
+			"mandatory": true,
+			"unique": false,
+			"type": "string",
+			"minlen": 0,
+			"maxlen": 0,
+			"colindex": 1,
+			"isViewField": true
+		},{
+			"name": "active",
+			"caption": "label.active",
+			"visible": true,
+			"control": "checkbox",
+			"mandatory": false,
+			"unique": false,
+			"type": "boolean",
+			"minlen": 0,
+			"maxlen": 0,
+			"colindex": 1
+		}]
+	}]
+}
