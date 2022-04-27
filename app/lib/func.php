@@ -57,7 +57,7 @@ function redirect_404()
 
  function safestr($str)
 {
-    return htmlentities($str, ENT_QUOTES);
+    return  htmlentities ($str ?  : '' , ENT_QUOTES);  
 }
 
 function format_db_date($dateStr, $format)
