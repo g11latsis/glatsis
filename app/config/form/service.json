@@ -1,0 +1,86 @@
+{
+    "tabs": [{
+        "id": "baseinfo",
+        "caption": "label.service_info",
+        "fields": [{
+                "name": "id",
+                "visible": false,
+                "control": "hidden",
+                "mandatory": false,
+                "unique": true,
+                "type": "int",
+                "colindex": 1
+            },
+            {
+                "name": "type",
+                "caption": "label.service_type",
+                "visible": true,
+                "control": "parameter",
+                "definition": "service_type",
+                "mandatory": true,
+                "unique": false,
+                "type": "int",
+                "minval": 1,
+                "colindex": 1
+            },
+            {
+                "name": "title",
+                "caption": "label.service_title",
+                "visible": true,
+                "control": "textbox",
+                "mandatory": true,
+                "unique": false,
+                "type": "string",
+                "minlen": 3,
+                "maxlen": 20,
+                "colindex": 1
+            },
+            {
+                "name": "place",
+                "caption": "label.service_place",
+                "visible": true,
+                "control": "textbox",
+                "mandatory": true,
+                "unique": false,
+                "type": "string",
+                "minlen": 3,
+                "maxlen": 20,
+                "colindex": 1
+            },
+            {
+                "name": "dateStarted",
+                "caption": "label.service_start",
+                "visible": true,
+                "control": "textbox",
+                "mandatory": true,
+                "unique": false,
+                "type": "string",
+                "minlen": 3,
+                "maxlen": 20,
+                "colindex": 2
+            }, {
+                "name": "dateCompleted",
+                "caption": "label.service_stop",
+                "visible": true,
+                "control": "textbox",
+                "mandatory": true,
+                "unique": false,
+                "type": "string",
+                "minlen": 3,
+                "maxlen": 20,
+                "colindex": 2
+            }, {
+                "name": "totalHours",
+                "caption": "label.service_totalHours",
+                "visible": true,
+                "control": "textbox",
+                "mandatory": true,
+                "unique": false,
+                "type": "string",
+                "minlen": 3,
+                "maxlen": 20,
+                "colindex": 2
+            }
+        ]
+    }]
+}

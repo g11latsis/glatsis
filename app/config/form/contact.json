@@ -1,82 +1,417 @@
 {
     "tabs": [{
-        "id": "baseinfo",
-        "caption": "label.baseinfo",
-        "fields": [{
-            "name": "id",
-            "visible": false,
-            "control": "hidden",
-            "mandatory": false,
-            "unique": true,
-            "type": "int",
-            "colindex": 1
-        }, {
-            "name": "code",
-            "caption": "label.eame",
-            "visible": true,
-            "control": "textbox",
-            "mandatory": true,
-            "unique": true,
-            "type": "string",
-            "minlen": 13,
-            "maxlen": 13,
-            "colindex": 1
-        }, {
-            "name": "firstname",
-            "caption": "label.firstname",
-            "visible": true,
-            "control": "textbox",
-            "mandatory": true,
-            "unique": false,
-            "type": "string",
-            "minlen": 3,
-            "maxlen": 20,
-            "colindex": 1
-        }, {
-            "name": "lastname",
-            "caption": "label.lastname",
-            "visible": true,
-            "control": "textbox",
-            "mandatory": true,
-            "unique": false,
-            "type": "string",
-            "minlen": 3,
-            "maxlen": 20,
-            "colindex": 1
-        }, {
-            "name": "fathername",
-            "caption": "label.fathername",
-            "visible": true,
-            "control": "textbox",
-            "mandatory": false,
-            "unique": false,
-            "type": "string",
-            "minlen": 3,
-            "maxlen": 20,
-            "colindex": 2
-        }, {
-            "name": "mothername",
-            "caption": "label.mothername",
-            "visible": true,
-            "control": "textbox",
-            "mandatory": false,
-            "unique": false,
-            "type": "string",
-            "minlen": 3,
-            "maxlen": 20,
-            "colindex": 2
-        }, {
-            "name": "degreeID",
-            "caption": "label.degree",
-            "visible": true,
-            "control": "parameter",
-            "definition": "cont_degree",
-            "mandatory": true,
-            "unique": false,
-            "type": "int",
-            "minval": 1,
-            "colindex": 2
-        }]
-    }]
+            "id": "baseinfo",
+            "caption": "label.baseinfo",
+            "fields": [{
+                    "name": "id",
+                    "visible": false,
+                    "control": "hidden",
+                    "mandatory": false,
+                    "unique": true,
+                    "type": "int",
+                    "colindex": 1
+                }, {
+                    "name": "code",
+                    "caption": "label.eame",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": true,
+                    "unique": true,
+                    "type": "string",
+                    "minlen": 13,
+                    "maxlen": 13,
+                    "colindex": 1
+                }, {
+                    "name": "firstname",
+                    "caption": "label.firstname",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": true,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 3,
+                    "maxlen": 20,
+                    "colindex": 1
+                }, {
+                    "name": "lastname",
+                    "caption": "label.lastname",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": true,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 3,
+                    "maxlen": 20,
+                    "colindex": 1
+                }, {
+                    "name": "fathername",
+                    "caption": "label.fathername",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": false,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 3,
+                    "maxlen": 20,
+                    "colindex": 1
+                }, {
+                    "name": "mothername",
+                    "caption": "label.mothername",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": false,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 3,
+                    "maxlen": 20,
+                    "colindex": 1
+                }, {
+                    "name": "borndate",
+                    "caption": "label.borndate",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": true,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 3,
+                    "maxlen": 20,
+                    "colindex": 2
+                },
+                {
+                    "name": "enterdate",
+                    "caption": "label.enterdate",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": true,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 3,
+                    "maxlen": 20,
+                    "colindex": 2
+                }, {
+                    "name": "gender",
+                    "caption": "label.gender",
+                    "visible": true,
+                    "control": "parameter",
+                    "definition": "cont_gender",
+                    "mandatory": false,
+                    "unique": false,
+                    "type": "int",
+                    "minval": 1,
+                    "colindex": 2
+                }, {
+                    "name": "blood_donor",
+                    "caption": "label.blood_donor",
+                    "visible": true,
+                    "control": "parameter",
+                    "definition": "cont_blood_donor",
+                    "mandatory": true,
+                    "unique": false,
+                    "type": "int",
+                    "minval": 1,
+                    "colindex": 2
+                },
+                {
+                    "name": "blood_type",
+                    "caption": "label.blood_type",
+                    "visible": true,
+                    "control": "parameter",
+                    "definition": "cont_blood_type",
+                    "mandatory": true,
+                    "unique": false,
+                    "type": "int",
+                    "minval": 1,
+                    "colindex": 2
+                },
+                {
+                    "name": "profession",
+                    "caption": "label.profession",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": false,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 3,
+                    "maxlen": 20,
+                    "colindex": 3
+                },
+                {
+                    "name": "afm",
+                    "caption": "label.afm",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": false,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 9,
+                    "maxlen": 9,
+                    "colindex": 3
+                },
+                {
+                    "name": "amka",
+                    "caption": "label.amka",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": false,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 11,
+                    "maxlen": 11,
+                    "colindex": 3
+                },
+                {
+                    "name": "taxoffice",
+                    "caption": "label.taxoffice",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": false,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 3,
+                    "maxlen": 20,
+                    "colindex": 3
+                },
+                {
+                    "name": "idnumber",
+                    "caption": "label.idnumber",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": false,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 3,
+                    "maxlen": 20,
+                    "colindex": 3
+                },
+                {
+                    "name": "idpassport",
+                    "caption": "label.idpassport",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": false,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 3,
+                    "maxlen": 20,
+                    "colindex": 4
+                },
+                {
+                    "name": "degreeID",
+                    "caption": "label.degree",
+                    "visible": true,
+                    "control": "parameter",
+                    "definition": "cont_degree",
+                    "mandatory": true,
+                    "unique": false,
+                    "type": "int",
+                    "minval": 1,
+                    "colindex": 4
+                }
 
+            ]
+
+
+        },
+
+        {
+            "id": "adressinfo",
+            "caption": "label.adressinfo",
+            "fields": [{
+                    "name": "city",
+                    "caption": "label.city",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": false,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 3,
+                    "maxlen": 20,
+                    "colindex": 1
+                },
+                {
+                    "name": "region",
+                    "caption": "label.region",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": false,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 3,
+                    "maxlen": 20,
+                    "colindex": 1
+                },
+                {
+                    "name": "street",
+                    "caption": "label.street",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": false,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 3,
+                    "maxlen": 20,
+                    "colindex": 1
+                },
+                {
+                    "name": "postalcode",
+                    "caption": "label.postalcode",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": false,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 3,
+                    "maxlen": 20,
+                    "colindex": 2
+                },
+                {
+                    "name": "activecity",
+                    "caption": "label.activecity",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": false,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 3,
+                    "maxlen": 20,
+                    "colindex": 2
+                },
+                {
+                    "name": "homenumber",
+                    "caption": "label.homenumber",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": false,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 10,
+                    "maxlen": 10,
+                    "colindex": 2
+                },
+                {
+                    "name": "phonenumber",
+                    "caption": "label.phonenumber",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": false,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 10,
+                    "maxlen": 10,
+                    "colindex": 3
+                },
+                {
+                    "name": "email",
+                    "caption": "label.email",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": false,
+                    "unique": false,
+                    "type": "string",
+                    "format": "email",
+                    "minlen": 3,
+                    "maxlen": 20,
+                    "colindex": 3
+                }
+
+            ]
+        },
+        {
+            "id": "eduinfo",
+            "caption": "label.eduinfo",
+            "fields": [{
+                    "name": "education",
+                    "caption": "label.education",
+                    "visible": true,
+                    "control": "parameter",
+                    "definition": "cont_education_l",
+                    "mandatory": true,
+                    "unique": false,
+                    "type": "int",
+                    "minval": 1,
+                    "colindex": 1
+                },
+                {
+                    "name": "school",
+                    "caption": "label.school",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": false,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 10,
+                    "maxlen": 10,
+                    "colindex": 1
+                },
+                {
+                    "name": "department",
+                    "caption": "label.department",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": false,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 10,
+                    "maxlen": 10,
+                    "colindex": 1
+                },
+                {
+                    "name": "school_degree",
+                    "caption": "label.school_degree",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": false,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 10,
+                    "maxlen": 10,
+                    "colindex": 1
+                },
+                {
+                    "name": "languages",
+                    "caption": "label.languages",
+                    "visible": true,
+                    "control": "parameter",
+                    "definition": "cont_languages",
+                    "mandatory": true,
+                    "unique": false,
+                    "type": "int",
+                    "minval": 1,
+                    "colindex": 2
+                },
+                {
+                    "name": "language_lvl",
+                    "caption": "label.language_lvl",
+                    "visible": true,
+                    "control": "parameter",
+                    "definition": "cont_lang_lvl",
+                    "mandatory": true,
+                    "unique": false,
+                    "type": "int",
+                    "minval": 1,
+                    "colindex": 2
+                },
+                {
+                    "name": "language_degree",
+                    "caption": "label.language_degree",
+                    "visible": true,
+                    "control": "textbox",
+                    "mandatory": false,
+                    "unique": false,
+                    "type": "string",
+                    "minlen": 10,
+                    "maxlen": 10,
+                    "colindex": 2
+                }
+            ]
+        }, {
+            "id": "driverinfo",
+            "caption": "label.driverinfo",
+            "fields": []
+        }, {
+            "id": "redcrossinfo",
+            "caption": "label.redcrossinfo",
+            "fields": []
+        }
+    ]
 }

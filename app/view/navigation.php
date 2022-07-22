@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 
-                <a class="navbar-brand" href="/admin/index.php">SB Admin</a>
+                <a class="navbar-brand" href="/admin/index.php">CMS Admin</a>
             </div>
 
             <!-- Top Menu Items -->

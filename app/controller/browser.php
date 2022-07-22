@@ -5,7 +5,7 @@ function browser_list()
     $data = auth_controller();
     $data['view'] = 'browser';
     
-    // Find the ntity from DB
+    // Find the Entity from DB
     $entityId = http_get_int('eid');
     $oEntity = (new SystemEntity())->getById($entityId);
     if (empty($oEntity))

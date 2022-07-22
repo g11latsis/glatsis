@@ -6,8 +6,8 @@
      */
     $form = $data['form'];
 ?>
-<form id="df" class="easyui-form" method="post" iframe="false" ajax="true"  style="width:100%;height:100%;">
-<div id="form-tabstrip" class="easyui-tabs" style="width:100%;height:100%;">
+<form id="df" class="easyui-form" method="post" iframe="false"  ajax="true"  style="width:100%;height:100%;">
+<div id="form-tabstrip"  class="easyui-tabs" style="width:100%;height:100%;">
 <?php foreach ($form->getTabs() as $tab): ?>
 
 	<div title="<?= $tab->caption ?>" style="padding: 10px;"> <!-- tab div -->

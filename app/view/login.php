@@ -9,6 +9,7 @@
     
     
     <script src="http://localhost/glatsis/pub/assets/js/app.js"></script>
+    
     <link href="assets/css/site.css" rel="stylesheet">
 </head>
 <body>
